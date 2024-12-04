@@ -1,0 +1,7 @@
+<h2>Twitch Clips</h2>
+<div *ngFor="let clip of clips">
+  <h3>{{ clip.title }}</h3>
+  <a [href]="clip.url" target="_blank">
+    <img [src]="clip.thumbnail_url.replace('-preview-', '-hqdefault-')" alt="{{ clip.title }}">
+  </a>
+</div>
